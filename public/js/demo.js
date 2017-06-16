@@ -37,7 +37,7 @@ function addItem(value, id) {
     var newli = "<li class='list-group-item' id='" + id + "'>" +
                     "<div align='right' style='float:right'>" +
                         "<button class='btn btn-danger btn-xs' id='btn-" + id + "' onClick='deleteItem(this.id)'>" +
-                            "Delete" +
+                            "Supprimer" +
                         "</button>" +
                     "</div>" +
                    "<div align='left'>" + value + "</div>" +
