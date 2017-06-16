@@ -12,7 +12,7 @@ block content
   form.form-inline(align="center" id="createForm" method="post" action="/values")
     div.form-group
       input.form-control(type="text" name="value" id="value" placeholder="Value" maxlength=32)
-      button.btn.btn-success(type="submit" id="create") Submit
+      button.btn.btn-success(type="submit" id="create") Soumettre
 
   br
 
@@ -22,7 +22,7 @@ block content
       each val, uuid in values
         li.list-group-item(id=uuid)
           div(align="right" style="float:right")
-            button.btn.btn-danger.btn-xs(id="btn-" + uuid onClick="deleteItem(this.id)") Delete
+            button.btn.btn-danger.btn-xs(id="btn-" + uuid onClick="deleteItem(this.id)") Supprimer
           div(align="left")= val
 
   div.modal.fade.modal-error(tabindex="-1" role="dialog" aria-labelledby="errorModal" id="errorModal")
@@ -34,4 +34,4 @@ block content
           h4.modal-title(id="errorModal") Error
         div.modal-body(id="errorField")
         div.modal-footer
-          button.btn.btn-danger.btn-sm(type="button" data-dismiss="modal") Close
+          button.btn.btn-danger.btn-sm(type="button" data-dismiss="modal") Fermer
